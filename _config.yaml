@@ -1,0 +1,33 @@
+title: Colchester Christmas Index
+email: christmasindex@bellaliant.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Helping families in Colchester County at Christmas time for over 50 years.
+  A major project of the Rotary Club of Truro Foundation.
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-seo-tag
+
+# -------------------------------------------------------------------
+# NAVIGATION MENU
+# This list determines what appears in the top menu and in what order.
+# -------------------------------------------------------------------
+header_pages:
+  - programs.md
+  - donate.md
+  - apply.md
+  - contact.md
+  # Note: index.md (Home) is automatically included as the logo/title link
+
+# -------------------------------------------------------------------
+# URL SETTINGS
+# -------------------------------------------------------------------
+# When you first deploy to 'username.github.io/christmas-index',
+# uncomment the line below so CSS loads correctly:
+# baseurl: "/christmas-index"
+
+# Once you point the custom domain 'christmasindex.ca' to GitHub,
+# comment out the line above and leave baseurl empty like this:
+baseurl: ""
+url: "https://christmasindex.ca"

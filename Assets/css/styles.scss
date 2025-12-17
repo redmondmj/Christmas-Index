@@ -1,0 +1,42 @@
+---
+---
+
+// 1. Import the default Minima theme
+@import "minima";
+
+// 2. Christmas Branding Overrides
+
+// Define Christmas Colors
+$christmas-red: #b3000c;
+$christmas-green: #006400;
+
+// Override the Site Title (Top Left)
+.site-title {
+  color: $christmas-red !important;
+  font-weight: bold;
+}
+
+// Override Navigation Links
+.page-link {
+  color: $christmas-green !important;
+}
+
+// Override Headings (H1, H2, H3)
+h1, h2, h3, h4 {
+  color: $christmas-green;
+}
+
+// Make links inside text pop
+a {
+  color: $christmas-red;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: $christmas-green;
+}
+
+// Fix for the "Current Status" line on the homepage
+span[style*="color: green"] {
+  color: $christmas-green !important;
+}
