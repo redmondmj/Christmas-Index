@@ -1,11 +1,23 @@
 <header class="site-header">
   <div class="header-container">
     
-    <div class="logo-container">
-      <img src="assets/images/logo.png" alt="Colchester Holiday Index Logo" class="site-logo">
+    <div class="branding">
+      <div class="logo-container">
+        <img src="assets/images/logo.png" alt="Colchester Holiday Index" class="site-logo">
+      </div>
+      <h1 class="site-title">Colchester Holiday Index</h1>
     </div>
 
-    <h1 class="site-title">Colchester Holiday Index</h1>
+    <nav class="site-nav">
+      {% if site.data.navigation %}
+        {% for item in site.data.navigation %}
+          <a href="{{ item.link }}" class="page-link">{{ item.name }}</a>
+        {% endfor %}
+      {% else %}
+         <a href="/" class="page-link">Home</a>
+         <a href="/about" class="page-link">About</a>
+      {% endif %}
+    </nav>
 
   </div>
 </header>

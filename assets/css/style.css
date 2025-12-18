@@ -1,21 +1,41 @@
-/* Container to hold logo and text */
+/* 1. The Container: Holds everything in a horizontal row */
 .header-container {
   display: flex;
-  flex-direction: column; /* Stacks logo on top of text */
-  align-items: center;    /* Centers everything */
-  justify-content: center;
-  padding: 20px 0;
+  align-items: center;        /* Vertically centers logo, text, and menu */
+  justify-content: space-between; /* Pushes Branding to left, Menu to right */
+  padding: 10px 20px;         /* Adds breathing room */
+  max-width: 1200px;          /* Prevents it from getting too wide on huge screens */
+  margin: 0 auto;             /* Centers the container on the page */
 }
 
-/* Style for the text */
+/* 2. The Branding: Groups Logo and Text together on the left */
+.branding {
+  display: flex;
+  align-items: center; /* Ensures logo and text line up vertically */
+  gap: 15px;           /* Space between the tag image and the words */
+}
+
+/* 3. The Logo Image */
+.site-logo {
+  height: 60px;       /* Sets a fixed height so the tag isn't massive */
+  width: auto;        /* Keeps aspect ratio */
+  display: block;
+}
+
+/* 4. The Title Text */
 .site-title {
-  color: #ffffff;         /* White text to match the red background */
-  font-family: sans-serif; /* Or 'Arial', or your preferred font */
-  font-size: 2.5rem;      /* Large and readable */
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.5rem;  /* Adjusted size to fit next to logo */
   font-weight: bold;
-  margin-top: 10px;       /* Space between logo and text */
-  margin-bottom: 0;
-  text-align: center;
-  text-transform: uppercase; /* Optional: makes it look more official */
-  letter-spacing: 1px;
+  line-height: 1.1;   /* Tighter line spacing */
+  text-transform: uppercase;
+}
+
+/* 5. The Menu Links (Right Side) */
+.site-nav .page-link {
+  color: #ffffff;
+  margin-left: 20px;  /* Space between menu items */
+  text-decoration: none;
+  font-size: 1rem;
 }
