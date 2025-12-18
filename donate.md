@@ -18,6 +18,6 @@ You can drop off new, unwrapped toys or gifts at the following locations until *
 ## Financial Donations
 We accept financial donations year-round!
 
-<a href="https://www.zeffy.com/en-CA/donation-form/colchester-christmas-index" class="btn" target="_blank">Donate Online via Zeffy</a>
+<a href="https://www.zeffy.com/en-CA/donation-form/colchester-christmas-index" class="btn" target="_blank">Donate Online</a>
 
 *(Note: Cheques can also be mailed to the address on our [Contact Us](/contact-us/) page.)*
