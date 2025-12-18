@@ -1,0 +1,21 @@
+/* Container to hold logo and text */
+.header-container {
+  display: flex;
+  flex-direction: column; /* Stacks logo on top of text */
+  align-items: center;    /* Centers everything */
+  justify-content: center;
+  padding: 20px 0;
+}
+
+/* Style for the text */
+.site-title {
+  color: #ffffff;         /* White text to match the red background */
+  font-family: sans-serif; /* Or 'Arial', or your preferred font */
+  font-size: 2.5rem;      /* Large and readable */
+  font-weight: bold;
+  margin-top: 10px;       /* Space between logo and text */
+  margin-bottom: 0;
+  text-align: center;
+  text-transform: uppercase; /* Optional: makes it look more official */
+  letter-spacing: 1px;
+}
