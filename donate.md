@@ -14,6 +14,10 @@ You can drop off new, unwrapped toys or gifts at the following locations until *
 * **Novus Glass** (Old Court House Branch Rd)
 * **ReMax Fairlane Realty** (Prince Street)
 
+
 ## Financial Donations
-We also accept financial donations.
-*(Note: If you found a QR code image on their Facebook page for donations, you should save that image to your `/assets/images/` folder and display it here using: `![Donate QR Code](/assets/images/qrcode.png)`)*
+We accept financial donations year-round!
+
+<a href="https://www.zeffy.com/en-CA/donation-form/colchester-christmas-index" class="btn" target="_blank">Donate Online via Zeffy</a>
+
+*(Note: Cheques can also be mailed to the address on our [Contact Us](/contact-us/) page.)*
