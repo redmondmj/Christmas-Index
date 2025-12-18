@@ -27,7 +27,7 @@
 .site-logo {
   max-height: 80px;    /* Adjust this number to make the white box smaller/larger */
   width: auto;
-  mix-blend-mode: multiply; /* This makes the white transparent-ish! */
+  /* mix-blend-mode: multiply; This makes the white transparent-ish! */
   border-radius: 4px;       /* Softens the corners */
 }
 
