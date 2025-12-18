@@ -6,7 +6,7 @@ permalink: /
 
 # Can you make Christmas something to remember?
 
-**Current Status:** <span style="color: green; font-weight: bold;">OPEN for 2025</span>
+**Current Status:** <span style="color: red; font-weight: bold;">CLOSED for 2025</span>
 **Deadline:** December 10, 2025
 
 Remember how excited YOU were on Christmas morning as a child? This year why not spread that joy to a child in need?
