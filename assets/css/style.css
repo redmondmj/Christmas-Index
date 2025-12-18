@@ -9,17 +9,26 @@
 }
 
 /* 2. The Branding: Groups Logo and Text together on the left */
+/* This is the key: it forces the logo and text to sit in a row */
 .branding {
-  display: flex;
-  align-items: center; /* Ensures logo and text line up vertically */
-  gap: 15px;           /* Space between the tag image and the words */
+  display: flex;       /* Activates the row layout */
+  flex-direction: row; /* Explicitly says 'horizontal' */
+  align-items: center; /* Vertically centers them */
+  gap: 15px;           /* Adds space between the logo and the text */
 }
 
-/* 3. The Logo Image */
+/* Ensure the logo container doesn't force a line break */
+.logo-container {
+  display: block;      /* Ensures it behaves well inside a flex box */
+  margin: 0;
+}
+
+/* Optional: Tweaks the logo size if it feels too big */
 .site-logo {
-  height: 60px;       /* Sets a fixed height so the tag isn't massive */
-  width: auto;        /* Keeps aspect ratio */
-  display: block;
+  max-height: 80px;    /* Adjust this number to make the white box smaller/larger */
+  width: auto;
+  mix-blend-mode: multiply; /* This makes the white transparent-ish! */
+  border-radius: 4px;       /* Softens the corners */
 }
 
 /* 4. The Title Text */
