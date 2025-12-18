@@ -1,42 +1,89 @@
 ---
 ---
-
-// 1. Import the default Minima theme
+// Import the base theme
 @import "minima";
 
-// 2. Christmas Branding Overrides
-
-// Define Christmas Colors
+// --- Christmas Variables ---
 $christmas-red: #b3000c;
-$christmas-green: #006400;
+$christmas-green: #165b33;
+$bg-color: #f4f4f4;       // Light grey background
+$card-bg: #ffffff;        // White content box
 
-// Override the Site Title (Top Left)
-.site-title {
-  color: $christmas-red !important;
+// --- 1. Global Layout ( The "Card" Look ) ---
+body {
+  background-color: $bg-color;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+// The main container for your text
+.page-content {
+  padding: 0; // Reset default padding
+}
+
+.wrapper {
+  background-color: $card-bg;
+  max-width: 900px; /* Limits width for readability */
+  margin: 2rem auto; /* Centers the box */
+  padding: 3rem;     /* Space inside the box */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Subtle drop shadow */
+  border-radius: 8px; /* Rounded corners */
+}
+
+// --- 2. The Header Bar ---
+.site-header {
+  background-color: $christmas-red;
+  border-bottom: 5px solid $christmas-green;
+  min-height: 80px;
+  
+  // Make the wrapper inside the header transparent
+  .wrapper {
+    background-color: transparent;
+    box-shadow: none;
+    margin: 0 auto;
+    padding: 15px 3rem;
+  }
+}
+
+// Site Title (Top Left)
+.site-title, .site-title:visited {
+  color: #fff !important; /* White text on Red background */
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+// Navigation Links (Top Right)
+.site-nav .page-link {
+  color: rgba(255,255,255,0.9) !important;
   font-weight: bold;
 }
-
-// Override Navigation Links
-.page-link {
-  color: $christmas-green !important;
-}
-
-// Override Headings (H1, H2, H3)
-h1, h2, h3, h4 {
-  color: $christmas-green;
-}
-
-// Make links inside text pop
-a {
-  color: $christmas-red;
+.site-nav .page-link:hover {
+  color: #fff !important;
   text-decoration: underline;
 }
 
-a:hover {
+// --- 3. Content Styling ---
+h1, h2, h3 {
   color: $christmas-green;
 }
 
-// Fix for the "Current Status" line on the homepage
-span[style*="color: green"] {
-  color: $christmas-green !important;
+a {
+  color: $christmas-red;
+  font-weight: bold;
+}
+
+// --- 4. Button Styles (Use class="btn") ---
+.btn {
+  display: inline-block;
+  background-color: $christmas-green;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: darken($christmas-green, 10%);
+  text-decoration: none;
 }
